@@ -1,3 +1,4 @@
+# A simple Rock-Paper-Scissor game played against the computer (random integer generator)
 import random
 wins = 0
 compwins = 0

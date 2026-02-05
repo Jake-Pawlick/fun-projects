@@ -1,3 +1,4 @@
+# A program that estimates the value of pi by simulating X amount of points and checking to see how many fall within a circular range
 import random 
 import math
 listx = []
