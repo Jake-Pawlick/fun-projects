@@ -8,6 +8,7 @@ length = len(numb)
 i=0
 print("beginning hash search in 3 seconds... press escape at anytime to stop")
 time.sleep(3)
+start_time = time.perf_counter()
 while True:
     if keyboard.is_pressed('esc'):
         print("ESC pressed, stopping.")
@@ -17,7 +18,9 @@ while True:
     res = hashlib.md5(data)
     res = res.hexdigest()
     if res[0:length] == numb:
-        print(string,i,res)
+        end_time = time.perf_counter()
+        elapsed_time = end_time - start_time
+        print(string,i,res,"-"*10,f"Took {elapsed_time:.4f} seconds to find!")
         break
     print (i)
     i+=1
