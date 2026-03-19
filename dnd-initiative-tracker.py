@@ -20,7 +20,7 @@ while True:
             print(f"-"*19,round_number,"-"*19)
         current_index = i % len(initiative_list)
         next_index = (i + 1) % len(initiative_list)
-        print(f"it is now \033[1;33m{initiative_list[current_index][0]}'s\033[0m turn. On deck is \033[1;32m{initiative_list[next_index][0]}\033[0m")
+        print(f"it is now \033[1;34m{initiative_list[current_index][0]}'s\033[0m turn. On deck is \033[1;34m{initiative_list[next_index][0]}\033[0m")
         i += 1
     elif user_input.lower() == "bye":
         break
