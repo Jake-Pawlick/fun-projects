@@ -1,4 +1,5 @@
 import os
+import sys
 os.system('cls')
 nillas = int(input("Welcome to Initiative! Please enter how many total turns there will be: "))
 initiative_list = []
@@ -23,4 +24,4 @@ while True:
         print(f"it is now \033[1;34m{initiative_list[current_index][0]}'s\033[0m turn. On deck is \033[1;34m{initiative_list[next_index][0]}\033[0m")
         i += 1
     elif user_input.lower() == "bye":
-        break
+        sys.exit()
