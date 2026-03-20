@@ -10,7 +10,7 @@ initiative_list = []
 # Collect player names and initiative rolls
 for i in range(nillas):
     name = input(f"Enter name of {i + 1}: ")
-    roll = int(input(f"Enter the initiative of {name}: "))
+    roll = float(input(f"Enter the initiative of {name}: "))
     initiative_list.append((name, roll))
 
 # Sort by initiative descending
